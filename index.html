@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>梅宇翔 | 个人主页</title>
     <title>林沐阳 | 个人主页</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
       <nav class="nav">
+        <div class="logo">YUXIANG MEI</div>
+        <div class="nav-links">
+          <a href="#about">简介</a>
+          <a href="#education">教育</a>
+          <a href="#projects">项目</a>
+          <a href="#publications">论文</a>
         <div class="logo">LMY</div>
         <div class="nav-links">
           <a href="#about">关于我</a>
@@ -18,6 +25,24 @@
         </div>
       </nav>
       <div class="hero-content">
+        <div class="profile">
+          <div class="avatar">梅宇翔</div>
+          <div>
+            <p class="tag">Speech · ASR · Speech-LLM</p>
+            <h1>梅宇翔</h1>
+            <p class="subtitle">
+              专注语音识别、多语种语音识别与 Speech-LLM 的研究与工程实践，追求可复现、可扩展的语音智能系统。
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn ghost" href="https://huggingface.co/yourname" target="_blank" rel="noreferrer">Hugging Face</a>
+              <a class="btn ghost" href="https://arxiv.org/search/?searchtype=author&query=Your+Name" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+            <div class="contact-inline">
+              <span>Tel: (+86) 15353675457</span>
+              <span>Email: <a href="mailto:m153517@icloud.com">m153517@icloud.com</a></span>
+            </div>
+          </div>
         <p class="tag">产品 · 设计 · 开发</p>
         <h1>你好，我是林沐阳</h1>
         <p class="subtitle">
@@ -33,6 +58,26 @@
     <main>
       <section id="about" class="section">
         <div class="section-header">
+          <h2>研究方向</h2>
+          <p>语音识别（ASR）· 多语种语音识别（MLASR）· Speech-LLM</p>
+        </div>
+        <div class="about-grid">
+          <div class="card">
+            <h3>研究兴趣</h3>
+            <p>
+              关注端到端 ASR 与 Speech-LLM 融合、跨语种泛化能力与高效微调策略。
+            </p>
+          </div>
+          <div class="card">
+            <h3>工程能力</h3>
+            <p>
+              熟悉 ESPNet/Wenet 等端到端语音框架，具备完整训练与评测流程搭建经验。
+            </p>
+          </div>
+          <div class="card">
+            <h3>目标导向</h3>
+            <p>
+              以可复现的实验与开源实践为核心，将研究成果落地到可用系统。
           <h2>关于我</h2>
           <p>以用户价值为核心，平衡体验与效率。</p>
         </div>
@@ -58,6 +103,33 @@
         </div>
       </section>
 
+      <section id="education" class="section alt">
+        <div class="section-header">
+          <h2>教育经历</h2>
+          <p>持续聚焦语音与多模态方向的学术训练。</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">2024/09 - 2027/06</div>
+            <div>
+              <h3>上海师范大学 · 通信工程 · 自然人机交互实验室</h3>
+              <p class="meta">硕士</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">2020/09 - 2024/06</div>
+            <div>
+              <h3>西安培华学院 · 软件工程 · 华为 ICT 学院</h3>
+              <p class="meta">学士</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2>项目经历</h2>
+          <p>以研究驱动工程落地，持续产出可复现成果。</p>
       <section id="projects" class="section alt">
         <div class="section-header">
           <h2>精选项目</h2>
@@ -66,6 +138,16 @@
         <div class="project-list">
           <article class="project">
             <div>
+              <h3>Bridging the Gap — Speech-LLM 与 End-to-End ASR 架构对比研究</h3>
+              <p>
+                对比 Speech-LLM 与端到端 ASR 在多语种对话识别的性能差异，探索 Cross-Attention 融合与多阶段训练策略。
+              </p>
+              <span class="meta">2025/07 - 2025/09 · ICASSP 2026 投稿 · 开源中</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourname/bridging-the-gap" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://arxiv.org/abs/your-paper" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://huggingface.co/yourname/bridging-the-gap" target="_blank" rel="noreferrer">Hugging Face</a>
               <h3>灵感收集平台</h3>
               <p>
                 为创意团队打造的灵感库，提供标签化管理、协作评论与自动归档功能。
@@ -75,6 +157,16 @@
           </article>
           <article class="project">
             <div>
+              <h3>MLC-SLM Challenge 多语种对话语音识别模型</h3>
+              <p>
+                设计双编码器架构与语言特定提示策略，在不增加额外数据的前提下显著提升跨语种识别表现。
+              </p>
+              <span class="meta">2025/03 - 2025/07 · INTERSPEECH 2025</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourname/mlc-slm" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://arxiv.org/abs/your-paper-mlc" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://huggingface.co/yourname/mlc-slm" target="_blank" rel="noreferrer">Hugging Face</a>
               <h3>品牌官网焕新</h3>
               <p>
                 完成品牌视觉升级与内容策略制定，提升转化率 28%。
@@ -84,6 +176,27 @@
           </article>
           <article class="project">
             <div>
+              <h3>SALMONN 多模态语音语言模型复现</h3>
+              <p>
+                完成 SALMONN 第一阶段训练并构建语音-语言模型的联合建模流程。
+              </p>
+              <span class="meta">2025/02 - 2025/03</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourname/salmonn-repro" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://huggingface.co/yourname/salmonn" target="_blank" rel="noreferrer">Hugging Face</a>
+            </div>
+          </article>
+          <article class="project">
+            <div>
+              <h3>Conformer-Transducer 语音识别模型复现</h3>
+              <p>
+                基于 ESPNet 与 LibriSpeech 100h 复现 Conformer-Transducer，并实现 Shallow Fusion 解码。
+              </p>
+              <span class="meta">2024/09 - 2025/02</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourname/conformer-transducer" target="_blank" rel="noreferrer">GitHub</a>
               <h3>数据看板系统</h3>
               <p>
                 设计并开发企业级 BI 看板，帮助业务实时掌握核心指标。
@@ -94,6 +207,56 @@
         </div>
       </section>
 
+      <section id="publications" class="section alt">
+        <div class="section-header">
+          <h2>科研成果</h2>
+          <p>聚焦多语种对话语音识别与 Speech-LLM。</p>
+        </div>
+        <div class="publication-list">
+          <div class="publication">
+            <span class="pub-index">[1]</span>
+            <div>
+              <p>
+                Yuxiang Mei, Yuang Zheng, Dongxing Xu, and Yanhua Long, “SHNU Multilingual
+                Conversational Speech Recognition System for INTERSPEECH 2025 MLC-SLM Challenge,”
+                in Workshop on Multilingual Conversational Speech Language Model (MLC-SLM), 2025.
+              </p>
+            </div>
+          </div>
+          <div class="publication">
+            <span class="pub-index">[2]</span>
+            <div>
+              <p>
+                Yuxiang Mei, Dongxing Xu, Jiaen Liang, and Yanhua Long, “Bridging the Gap: A
+                Comparative Exploration of Speech-LLM and End-to-End Architecture for Multilingual
+                Conversational ASR,” submitted to ICASSP 2026.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2>专业技能</h2>
+          <p>语音框架、语言与工程工具栈。</p>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <h4>框架与工具</h4>
+            <p>ESPNet · Wenet · PyTorch · LoRA</p>
+          </div>
+          <div class="skill">
+            <h4>编程语言</h4>
+            <p>Python · Shell · Java</p>
+          </div>
+          <div class="skill">
+            <h4>建模方向</h4>
+            <p>ASR · 多语种 ASR · Speech-LLM</p>
+          </div>
+          <div class="skill">
+            <h4>科研能力</h4>
+            <p>实验复现 · 多阶段训练 · 性能评测</p>
       <section id="skills" class="section">
         <div class="section-header">
           <h2>技能矩阵</h2>
@@ -122,6 +285,13 @@
       <section id="contact" class="section alt">
         <div class="section-header">
           <h2>联系我</h2>
+          <p>欢迎交流研究合作与工程实践。</p>
+        </div>
+        <div class="contact-card">
+          <div>
+            <h3>开放合作</h3>
+            <p>
+              若你有语音识别、Speech-LLM、开源复现或论文合作需求，欢迎通过以下方式联系我。
           <p>欢迎聊聊新的想法或合作机会。</p>
         </div>
         <div class="contact-card">
@@ -134,6 +304,18 @@
           <div class="contact-details">
             <div>
               <span>邮箱</span>
+              <a href="mailto:m153517@icloud.com">m153517@icloud.com</a>
+            </div>
+            <div>
+              <span>电话</span>
+              <p>(+86) 15353675457</p>
+            </div>
+            <div>
+              <span>地点</span>
+              <p>中国 · 上海</p>
+            </div>
+          </div>
+          <a class="btn primary" href="mailto:m153517@icloud.com">发送邮件</a>
               <a href="mailto:hello@lmyx.studio">hello@lmyx.studio</a>
             </div>
             <div>
@@ -151,6 +333,7 @@
     </main>
 
     <footer class="footer">
+      <p>© 2025 梅宇翔 · 个人主页</p>
       <p>© 2025 林沐阳 · 个人主页</p>
     </footer>
   </body>
